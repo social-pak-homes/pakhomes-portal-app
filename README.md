@@ -40,13 +40,6 @@
 
 ---
 
-## Demo
-
-Check out a live demo here:
-👉 [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/)
-
----
-
 ## Installation
 
 Clone the repository:
