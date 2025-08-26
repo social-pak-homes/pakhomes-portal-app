@@ -1,7 +1,9 @@
-<a href="https://pakhomes-portal-app.vercel.app/">
-  <img align="center" alt="PAK Homes Builder - Build Your Dream Home with Ease" src="https://static.wixstatic.com/media/a3eae5_ff0f3ef15fa846d8aa37a6950a8625bc~mv2.png/v1/fill/w_147,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3eae5_ff0f3ef15fa846d8aa37a6950a8625bc~mv2.png">
-  <h1 align="center">PAK Homes Builder</h1>
-</a>
+<div align="center">
+  <a href="https://pakhomes-portal-app.vercel.app/">
+    <img align="center" alt="PAK Homes Builder - Build Your Dream Home with Ease" src="https://static.wixstatic.com/media/a3eae5_ff0f3ef15fa846d8aa37a6950a8625bc~mv2.png/v1/fill/w_147,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3eae5_ff0f3ef15fa846d8aa37a6950a8625bc~mv2.png">
+    <h1 align="center">PAK Homes Builder</h1>
+  </a>
+</div>
 
 <p align="center">
  A modern platform to plan, design, and manage your dream home with ease.
