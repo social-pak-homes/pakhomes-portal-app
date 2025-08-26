@@ -1,70 +1,103 @@
-Features
+<a href="https://pakhomes-portal-app.vercel.app/">
+  <img alt="PAK Homes Builder - Build Your Dream Home with Ease" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
+  <h1 align="center">PAK Homes Builder</h1>
+</a>
 
-End-to-end home building management
+<p align="center">
+ A modern platform to plan, design, and manage your dream home with ease.
+</p>
 
-Project planning
+<p align="center">
+  <a href="#features"><strong>Features</strong></a> ·
+  <a href="#demo"><strong>Demo</strong></a> ·
+  <a href="#installation"><strong>Installation</strong></a> ·
+  <a href="#local-development"><strong>Local Development</strong></a> ·
+  <a href="#feedback"><strong>Feedback</strong></a>
+</p>
+<br/>
 
-Material tracking
+---
 
-Contractor & labor management
+## Features
 
-Budget and timeline tracking
+* 🏗️ **Home Building Management**
+  Plan, track, and manage every stage of your construction project.
 
-Secure authentication for homeowners, contractors, and admins
+* 📋 **Project Planning Tools**
+  Timeline management, budgeting, and material tracking.
 
-Modern UI built with Tailwind CSS
+* 👷 **Role-Based Access**
+  Secure logins for homeowners, contractors, and project admins.
 
-Reusable components with shadcn/ui
+* 🎨 **Modern UI/UX**
+  Built with [Tailwind CSS](https://tailwindcss.com) and [shadcn/ui](https://ui.shadcn.com/) for a sleek experience.
 
-Cloud-ready deployment and easy scalability
+* ⚡ **Real-Time Updates**
+  Instant project progress tracking and communication between teams.
 
-Real-time updates for project progress and communication
+* ☁️ **Cloud Ready**
+  Easily deployable and scalable on [Vercel](https://vercel.com).
 
-Demo
+---
 
-You can view a fully working demo at demo-nextjs-with-supabase.vercel.app
-.
+## Demo
 
-Get Started
+Check out a live demo here:
+👉 [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/)
 
-Clone this repository:
+---
 
+## Installation
+
+Clone the repository:
+
+```bash
 git clone https://github.com/your-username/pak-homes-builder.git
 cd pak-homes-builder
-
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
+Set up environment variables by renaming `.env.example` to `.env.local`:
 
-Rename .env.example to .env.local and configure your environment variables:
+```
+NEXT_PUBLIC_API_URL=[INSERT YOUR API URL]
+NEXT_PUBLIC_API_KEY=[INSERT YOUR API KEY]
+```
 
-NEXT_PUBLIC_API_URL=[INSERT API URL]
-NEXT_PUBLIC_API_KEY=[INSERT API KEY]
+---
 
+## Local Development
 
 Run the development server:
 
+```bash
 npm run dev
+```
 
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-The app should now be running on localhost:3000
-.
+If you want to change styles or UI components, update `components.json` or reinstall [shadcn/ui](https://ui.shadcn.com/docs/installation/next).
 
-Customize styles or components as needed.
+---
 
-Feedback and Support
+## Feedback
 
-If you encounter any issues or have feature requests, please reach out through our support page
-.
+We’d love your feedback!
 
-Roadmap
+* 📝 Report issues via [GitHub Issues](https://github.com/your-username/pak-homes-builder/issues)
+* 💡 Suggest features by opening a discussion
 
- 3D home design integration
+---
 
- Payment gateway for contractors
+## Roadmap
 
- Mobile app (iOS & Android)
+* [ ] Interactive 3D home design tool
+* [ ] Payment system for contractors
+* [ ] iOS & Android mobile apps
+* [ ] Multi-language support
 
- Multi-language support
