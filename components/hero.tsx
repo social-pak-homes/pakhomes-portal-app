@@ -1,11 +1,8 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export function Hero() {
-  const clientLogin = useState(false);
-  const contractorLogin = useState(false);
 
   return (
     <div className="flex flex-col gap-16 items-center align-middle place-content-center bg-signInBG h-screen w-screen">
@@ -43,9 +40,9 @@ export function Hero() {
               </div>
             </Link>
             <span className="text-sm text-gray-400 text-center pt-4 pb-2 font-semibold">NEED HELP TO ACCESS YOU ACCOUNT?</span>
-            <a className="bg-primary px-4 py-2 text-white text-center text-xs w-auto self-center" href="/support">
+            <Link className="bg-primary px-4 py-2 text-white text-center text-xs w-auto self-center" href="/support">
               CONTACT SUPPORT
-            </a>
+            </Link>
             <span className="text-sm text-gray-400 text-center py-2 font-semibold">OR CONTACT OUR OFFICE (905) 904 5353</span>
           </div>
         </div>

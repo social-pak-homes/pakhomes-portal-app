@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Support from "@/components/ui/support";
 import { IoChevronBack } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -19,7 +20,7 @@ export default function Page() {
           </div>
           {/* Right side panel */}
           <div className="flex flex-col gap-2 justify-center place-items-center bg-white sm:w-[600px] sm:h-[600px]">
-            <a href="/" className="text-greenTheme font-semibold absolute top-[32%] left-[44%]"><IoChevronBack size={20}/></a>
+            <Link href="/" className="text-greenTheme font-semibold absolute top-[32%] left-[44%]"><IoChevronBack size={20}/></Link>
             <div className="flex flex-col gap-0">
               <SignUpFormContractor />
               <Support />

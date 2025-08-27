@@ -1,5 +1,6 @@
 import { TutorialStep } from "./tutorial-step";
 import { CodeBlock } from "./code-block";
+import Link from "next/link";
 
 const create = `create table notes (
   id bigserial primary key,
@@ -29,7 +30,7 @@ import { createClient } from '@/utils/supabase/client'
 import { useEffect, useState } from 'react'
 
 export default function Page() {
-  const [notes, setNotes] = useState<any[] | null>(null)
+  const [notes, setNotes] = useState<Linkny[] | null>(null)
   const supabase = createClient()
 
   useEffect(() => {
@@ -50,25 +51,25 @@ export function FetchDataSteps() {
       <TutorialStep title="Create some tables and insert some data">
         <p>
           Head over to the{" "}
-          <a
+          <Link
             href="https://supabase.com/dashboard/project/_/editor"
             className="font-bold hover:underline text-foreground/80"
             target="_blank"
             rel="noreferrer"
           >
             Table Editor
-          </a>{" "}
+          </Link>{" "}
           for your Supabase project to create a table and insert some example
           data. If you&apos;re stuck for creativity, you can copy and paste the
           following into the{" "}
-          <a
+          <Link
             href="https://supabase.com/dashboard/project/_/sql/new"
             className="font-bold hover:underline text-foreground/80"
             target="_blank"
             rel="noreferrer"
           >
             SQL Editor
-          </a>{" "}
+          </Link>{" "}
           and click RUN!
         </p>
         <CodeBlock code={create} />
@@ -91,12 +92,12 @@ export function FetchDataSteps() {
       <TutorialStep title="Explore the Supabase UI Library">
         <p>
           Head over to the{" "}
-          <a
+          <Link
             href="https://supabase.com/ui"
             className="font-bold hover:underline text-foreground/80"
           >
             Supabase UI library
-          </a>{" "}
+          </Link>{" "}
           and try installing some blocks. For example, you can install a
           Realtime Chat block by running:
         </p>

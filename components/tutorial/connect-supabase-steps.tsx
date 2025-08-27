@@ -1,4 +1,5 @@
 import { TutorialStep } from "./tutorial-step";
+import Link from "next/link";
 
 export function ConnectSupabaseSteps() {
   return (
@@ -6,14 +7,14 @@ export function ConnectSupabaseSteps() {
       <TutorialStep title="Create Supabase project">
         <p>
           Head over to{" "}
-          <a
+          <Link
             href="https://app.supabase.com/project/_/settings/api"
             target="_blank"
             className="font-bold hover:underline text-foreground/80"
             rel="noreferrer"
           >
             database.new
-          </a>{" "}
+          </Link>{" "}
           and create a new Supabase project.
         </p>
       </TutorialStep>
@@ -29,14 +30,14 @@ export function ConnectSupabaseSteps() {
             .env.local
           </span>{" "}
           and populate with values from{" "}
-          <a
+          <Link
             href="https://app.supabase.com/project/_/settings/api"
             target="_blank"
             className="font-bold hover:underline text-foreground/80"
             rel="noreferrer"
           >
             your Supabase project&apos;s API Settings
-          </a>
+          </Link>
           .
         </p>
       </TutorialStep>

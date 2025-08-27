@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -13,12 +12,6 @@ export const metadata: Metadata = {
   title: "PAK Homes Builder Portal",
   description: "PAK Homes Builder Client & General Contractor Portal",
 };
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  display: "swap",
-  subsets: ["latin"],
-});
 
 const eurostile = localFont({
   src: [
