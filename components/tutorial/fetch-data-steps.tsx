@@ -30,7 +30,7 @@ import { createClient } from '@/utils/supabase/client'
 import { useEffect, useState } from 'react'
 
 export default function Page() {
-  const [notes, setNotes] = useState<Linkny[] | null>(null)
+  const [notes, setNotes] = useState<any[] | null>(null)
   const supabase = createClient()
 
   useEffect(() => {
