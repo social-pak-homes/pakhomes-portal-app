@@ -16,8 +16,10 @@ const Navbar = () => {
           <Image src={"/logo.png"} alt="logo" className="object-cover" width={64} height={64}/>
           <Link href="/">PAK Homes Builder</Link>
         </div>
-        {!hasEnvVars ? <EnvVarWarning /> : <AuthButton />}
-        <ThemeSwitcher />
+        <div className="flex flex-row gap-2">
+          {!hasEnvVars ? <EnvVarWarning /> : <AuthButton />}
+          <ThemeSwitcher />
+        </div>
       </div>
       
     </nav>

@@ -1,8 +1,8 @@
-import { SignUpForm } from "@/components/sign-up-form";
+import { LoginFormContractor } from "@/components/login-form-contractor";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import Support from "@/components/ui/support";
 import { IoChevronBack } from "react-icons/io5";
-import Support from "@/components/ui/support"
 
 export default function Page() {
   return (
@@ -13,15 +13,15 @@ export default function Page() {
           {/* Left side panel */}
           <div className="flex flex-col justify-center place-items-center bg-primary sm:w-[320px] sm:h-[600px]">
             <Image src="/logoHD.png" alt="Logo" width={168} height={168} className="absolute sm:top-[240px]"/>
-            <h3 className="text-white text-6xl -translate-y-[80%]">SIGN UP</h3>
-            <p className="text-white text-xl -translate-y-[40px]">TO ACCESS OUR PORTAL APP</p>
+            <h3 className="text-white text-6xl -translate-y-[80%]">SIGN IN</h3>
+            <p className="text-white text-xl -translate-y-[40px]">TO YOUR PROJECT ACCOUNT</p>
             <p className="text-white text-[11px] -translate-y-[30px]">Secure  Access for Clients  &  Contractors</p>
           </div>
           {/* Right side panel */}
           <div className="flex flex-col gap-5 justify-center place-items-center bg-white sm:w-[600px] sm:h-[600px]">
+            <a href="/" className="text-greenTheme font-semibold absolute top-[32%] left-[44%]"><IoChevronBack size={20}/></a>
             <div className="flex flex-col gap-0">
-              <a href="/" className="text-greenTheme font-semibold absolute top-[32%] left-[44%]"><IoChevronBack size={20}/></a>
-              <SignUpForm />
+              <LoginFormContractor />
               <Support />
             </div>
           </div>

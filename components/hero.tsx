@@ -1,8 +1,12 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export function Hero() {
+  const clientLogin = useState(false);
+  const contractorLogin = useState(false);
+
   return (
     <div className="flex flex-col gap-16 items-center align-middle place-content-center bg-signInBG h-screen w-screen">
       <div className="flex flex-row justify-center self-center align-middle shadow-2xl ">
@@ -24,7 +28,7 @@ export function Hero() {
                 <Image src={"/clients.png"} alt="" width={98} height={98} className=""/>
                 <span className="text-gray-400 text-md font-semibold">Client Login</span>
               </div>
-            </Link>
+            </Link> 
             <div className="w-full flex flex-row justify-center place-items-center">
               <div className="w-1/4 p-[1px] bg-gradient-to-r from-foreground/10 to-transparent my-4" />
               <span className="text-sm text-gray-400">OR</span>
@@ -32,10 +36,12 @@ export function Hero() {
             </div>
 
             {/* Contractor Login */}
-            <div className="flex flex-col justify-center place-items-center bg-[#e5e9e8] w-[350px] h-[150px] cursor-pointer border-2 hover:border-primary duration-300 transition-all ease-in-out">
-              <Image src={"/contractor.png"} alt="" width={98} height={98} className=""/>
-              <span className="text-gray-400 text-md font-semibold">General Contractor Login</span>
-            </div>
+            <Link href="/auth/login-contractor">
+              <div className="flex flex-col justify-center place-items-center bg-[#e5e9e8] w-[350px] h-[150px] cursor-pointer border-2 hover:border-primary duration-300 transition-all ease-in-out">
+                <Image src={"/contractor.png"} alt="" width={98} height={98} className=""/>
+                <span className="text-gray-400 text-md font-semibold">General Contractor Login</span>
+              </div>
+            </Link>
             <span className="text-sm text-gray-400 text-center pt-4 pb-2 font-semibold">NEED HELP TO ACCESS YOU ACCOUNT?</span>
             <a className="bg-primary px-4 py-2 text-white text-center text-xs w-auto self-center" href="/support">
               CONTACT SUPPORT

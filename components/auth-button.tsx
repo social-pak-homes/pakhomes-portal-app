@@ -1,6 +1,7 @@
+"use client"
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { createClient } from "@/lib/supabase/server";
+import { createClient } from "@/lib/supabase/client";
 import { LogoutButton } from "./logout-button";
 
 export async function AuthButton() {
@@ -18,11 +19,8 @@ export async function AuthButton() {
     </div>
   ) : (
     <div className="flex gap-2">
-      <Button asChild size="sm" variant={"default"} className="border-2 border-yellow-500">
+      <Button asChild size="sm" variant={"default"} className="border-2 border-yellow-500 hover:bg-slate-200/10">
         <Link href="/auth/login">Sign in</Link>
-      </Button>
-      <Button asChild size="sm" variant={"default"} className="border-2 border-yellow-500">
-        <Link href="/auth/sign-up">Sign up</Link>
       </Button>
     </div>
   );

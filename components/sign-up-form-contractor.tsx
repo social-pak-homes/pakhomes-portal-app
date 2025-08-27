@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import {
-  Card,
   CardContent,
   CardDescription,
   CardHeader,
@@ -16,7 +15,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function SignUpForm({
+export function SignUpFormContractor({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
@@ -50,7 +49,7 @@ export function SignUpForm({
       });
       if (data?.user?.id) {
         await supabase.from('profiles').insert([
-          { id: data.user.id, full_name: fullname, role: 'client' }
+          { id: data.user.id, full_name: fullname, role: 'contractor' }
         ]);
       }
       if (error) throw error;
@@ -63,11 +62,11 @@ export function SignUpForm({
   };
 
   return (
-    <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <div>
+    <div className={cn("flex flex-col", className)} {...props}>
+      <div className="flex flex-col gap-0">
         <CardHeader>
-          <CardTitle className="text-2xl">Client Portal Sign up</CardTitle>
-          <CardDescription>Create a new Client account</CardDescription>
+          <CardTitle className="text-2xl">General Contractor Portal Sign up</CardTitle>
+          <CardDescription>Create a new Contractor account</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSignUp}>
@@ -125,7 +124,7 @@ export function SignUpForm({
             </div>
             <div className="mt-4 text-center text-sm">
               Already have an account?{" "}
-              <Link href="/auth/login" className="underline underline-offset-4">
+              <Link href="/auth/login-contractor" className="underline underline-offset-4">
                 Login
               </Link>
             </div>
