@@ -1,105 +1,98 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
-  <h1 align="center">Next.js and Supabase Starter Kit</h1>
-</a>
+<div align="center">
+  <a href="https://pakhomes-portal-app.vercel.app/">
+    <img align="center" alt="PAK Homes Builder - Build Your Dream Home with Ease" src="https://static.wixstatic.com/media/a3eae5_ff0f3ef15fa846d8aa37a6950a8625bc~mv2.png/v1/fill/w_147,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3eae5_ff0f3ef15fa846d8aa37a6950a8625bc~mv2.png">
+    <h1 align="center">PAK Homes Builder</h1>
+  </a>
+</div>
 
 <p align="center">
- The fastest way to build apps with Next.js and Supabase
+ A modern platform to plan, design, and manage your dream home with ease.
 </p>
 
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#demo"><strong>Demo</strong></a> ·
-  <a href="#deploy-to-vercel"><strong>Deploy to Vercel</strong></a> ·
-  <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
-  <a href="#feedback-and-issues"><strong>Feedback and issues</strong></a>
-  <a href="#more-supabase-examples"><strong>More Examples</strong></a>
+  <a href="#installation"><strong>Installation</strong></a> ·
+  <a href="#local-development"><strong>Local Development</strong></a> ·
+  <a href="#feedback"><strong>Feedback</strong></a>
 </p>
 <br/>
 
+---
+
 ## Features
 
-- Works across the entire [Next.js](https://nextjs.org) stack
-  - App Router
-  - Pages Router
-  - Middleware
-  - Client
-  - Server
-  - It just works!
-- supabase-ssr. A package to configure Supabase Auth to use cookies
-- Password-based authentication block installed via the [Supabase UI Library](https://supabase.com/ui/docs/nextjs/password-based-auth)
-- Styling with [Tailwind CSS](https://tailwindcss.com)
-- Components with [shadcn/ui](https://ui.shadcn.com/)
-- Optional deployment with [Supabase Vercel Integration and Vercel deploy](#deploy-your-own)
-  - Environment variables automatically assigned to Vercel project
+* 🏗️ **Home Building Management**
+  Plan, track, and manage every stage of your construction project.
 
-## Demo
+* 📋 **Project Planning Tools**
+  Timeline management, budgeting, and material tracking.
 
-You can view a fully working demo at [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/).
+* 👷 **Role-Based Access**
+  Secure logins for homeowners, contractors, and project admins.
 
-## Deploy to Vercel
+* 🎨 **Modern UI/UX**
+  Built with [Tailwind CSS](https://tailwindcss.com) and [shadcn/ui](https://ui.shadcn.com/) for a sleek experience.
 
-Vercel deployment will guide you through creating a Supabase account and project.
+* ⚡ **Real-Time Updates**
+  Instant project progress tracking and communication between teams.
 
-After installation of the Supabase integration, all relevant environment variables will be assigned to the project so the deployment is fully functioning.
+* ☁️ **Cloud Ready**
+  Easily deployable and scalable on [Vercel](https://vercel.com).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
+---
 
-The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+## Installation
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+Clone the repository:
 
-## Clone and run locally
+```bash
+git clone https://github.com/your-username/pak-homes-builder.git
+cd pak-homes-builder
+```
 
-1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
+Install dependencies:
 
-2. Create a Next.js app using the Supabase Starter template npx command
+```bash
+npm install
+```
 
-   ```bash
-   npx create-next-app --example with-supabase with-supabase-app
-   ```
+Set up environment variables by renaming `.env.example` to `.env.local`:
 
-   ```bash
-   yarn create next-app --example with-supabase with-supabase-app
-   ```
+```
+NEXT_PUBLIC_API_URL=[INSERT YOUR API URL]
+NEXT_PUBLIC_API_KEY=[INSERT YOUR API KEY]
+```
 
-   ```bash
-   pnpm create next-app --example with-supabase with-supabase-app
-   ```
+---
 
-3. Use `cd` to change into the app's directory
+## Local Development
 
-   ```bash
-   cd with-supabase-app
-   ```
+Run the development server:
 
-4. Rename `.env.example` to `.env.local` and update the following:
+```bash
+npm run dev
+```
 
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=[INSERT SUPABASE PROJECT URL]
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=[INSERT SUPABASE PROJECT API ANON KEY]
-   ```
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-   Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` can be found in [your Supabase project's API settings](https://supabase.com/dashboard/project/_?showConnect=true)
+If you want to change styles or UI components, update `components.json` or reinstall [shadcn/ui](https://ui.shadcn.com/docs/installation/next).
 
-5. You can now run the Next.js local development server:
+---
 
-   ```bash
-   npm run dev
-   ```
+## Feedback
 
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+We’d love your feedback!
 
-6. This template comes with the default shadcn/ui style initialized. If you instead want other ui.shadcn styles, delete `components.json` and [re-install shadcn/ui](https://ui.shadcn.com/docs/installation/next)
+* 📝 Report issues via [GitHub Issues](https://github.com/your-username/pak-homes-builder/issues)
+* 💡 Suggest features by opening a discussion
 
-> Check out [the docs for Local Development](https://supabase.com/docs/guides/getting-started/local-development) to also run Supabase locally.
+---
 
-## Feedback and issues
+## Roadmap
 
-Please file feedback and issues over on the [Supabase GitHub org](https://github.com/supabase/supabase/issues/new/choose).
+* [ ] Interactive 3D home design tool
+* [ ] Payment system for contractors
+* [ ] iOS & Android mobile apps
+* [ ] Multi-language support
 
-## More Supabase examples
-
-- [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
-- [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
-- [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
