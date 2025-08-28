@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
-import localFont from "next/font/local";
+import { Jura } from "next/font/google"
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -13,16 +13,9 @@ export const metadata: Metadata = {
   description: "PAK Homes Builder Client & General Contractor Portal",
 };
 
-const eurostile = localFont({
-  src: [
-    {
-      path: "./fonts/eurostile.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-eurostile",
-});
+const jura = Jura({
+  subsets: ['latin']
+})
 
 export default function RootLayout({
   children,
@@ -31,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${eurostile.className} antialiased`}>
+      <body className={`${jura.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
