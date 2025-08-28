@@ -23,10 +23,7 @@ export default function Home() {
             
           </div>
         </nav>
-
         <Hero />
-
-        
       </div>
     </main>
   );
