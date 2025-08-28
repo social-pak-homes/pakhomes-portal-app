@@ -65,7 +65,7 @@ export function SignUpForm({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <div>
         <CardHeader>
-          <CardTitle className="text-2xl">Client Portal Sign up</CardTitle>
+          <CardTitle className="text-2xl">PAK Homes Client Portal Sign up</CardTitle>
           <CardDescription>Create a new Client account</CardDescription>
         </CardHeader>
         <CardContent>
